@@ -1,9 +1,14 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #0f172a;
+  background-color: #0b0f1a;
   color: #e2e8f0;
-  line-height: 1.6;
+
+  /* Grid técnico sutil */
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
 section {
@@ -11,18 +16,34 @@ section {
 }
 
 .hero {
-  text-align: center;
-  padding-top: 100px;
+  position: relative;
+  padding: 60px 10% 80px 10%;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: #0ea5e9;
+  filter: blur(220px);
+  opacity: 0.08;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  pointer-events: none;
 }
 
 .hero h1 {
   font-size: 48px;
-  margin-bottom: 10px;
+  margin: 20px 0 10px 0;
 }
 
 .hero h2 {
   color: #38bdf8;
-  font-weight: 400;
+  margin: 10px 0;
+  font-size: 20px;
 }
 
 .hero p {
@@ -57,16 +78,18 @@ section {
 }
 
 .project-card {
-  background: #1e293b;
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(56, 189, 248, 0.1);
+  backdrop-filter: blur(6px);
   padding: 20px;
   border-radius: 12px;
-  margin-top: 20px;
   transition: 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  background: #273449;
+  transform: translateY(-6px);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.2);
 }
 
 .project-card a {
@@ -149,9 +172,9 @@ footer {
 }
 
 .hero-highlight {
-  font-size: 18px;
   color: #38bdf8;
-  margin-top: 20px;
+  margin: 15px 0;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -165,6 +188,7 @@ footer {
   position: absolute;
   top: 20px;
   right: 10%;
+  z-index: 1000;
 }
 
 .language-toggle button {
@@ -192,12 +216,13 @@ footer {
 }
 
 .hero-photo img {
-  width: 220px;
-  height: 220px;
+  width: 190px;
+  height: 190px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #38bdf8;
   box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+  margin-bottom: 10px;
 }
 
 .hero-content {
@@ -219,10 +244,11 @@ footer {
 }
 
 .badge {
-  background: #0ea5e9;
-  color: #0f172a;
+  background: rgba(14, 165, 233, 0.15);
+  border: 1px solid rgba(14, 165, 233, 0.4);
+  color: #38bdf8;
   padding: 4px 8px;
   font-size: 12px;
   border-radius: 6px;
-  font-weight: bold;
+  font-weight: 600;
 }
