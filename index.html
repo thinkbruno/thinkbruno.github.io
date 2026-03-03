@@ -1,1 +1,333 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bruno Ramos | Senior Backend Engineer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
+  <body>
+    <!-- BOTÃO DE IDIOMA -->
+    <div class="language-toggle">
+      <button onclick="setLanguage('pt')">🇧🇷 PT</button>
+      <button onclick="setLanguage('en')">🇺🇸 EN</button>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-photo">
+          <img src="assets/img/profile.png" alt="Bruno Ramos" />
+        </div>
+
+        <div class="hero-content">
+          <h1>Bruno Ramos</h1>
+
+          <h2>
+            <span data-lang="pt"
+              >Engenheiro Backend Sênior | Arquitetura de APIs e Cloud</span
+            >
+            <span data-lang="en" style="display: none">
+              Senior Backend Engineer | Cloud & API Architecture
+            </span>
+          </h2>
+
+          <p class="hero-highlight">
+            <span data-lang="pt">
+              Projetando sistemas backend escaláveis e aplicações cloud-native
+              com Python.
+            </span>
+            <span data-lang="en" style="display: none">
+              Designing scalable backend systems and cloud-native applications
+              with Python.
+            </span>
+          </p>
+
+          <div class="cv-buttons">
+            <a
+              href="assets/cv/BrunoRamos_CurriculoRevisado(PTBR).pdf"
+              target="_blank"
+              class="cv-btn"
+            >
+              🇧🇷 CV Português
+            </a>
+            <a
+              href="assets/cv/BrunoRamos_CurriculoRevisado(EN).pdf"
+              target="_blank"
+              class="cv-btn"
+            >
+              🇺🇸 CV English
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERFIL -->
+    <section class="about">
+      <h3>
+        <span data-lang="pt">Perfil Profissional</span>
+        <span data-lang="en" style="display: none">Professional Profile</span>
+      </h3>
+
+      <p>
+        <span data-lang="pt">
+          Desenvolvedor com foco em backend, especializado na construção de APIs
+          REST, autenticação JWT, modelagem de dados e arquitetura em nuvem
+          utilizando Python, Flask e FastAPI.
+        </span>
+        <span data-lang="en" style="display: none">
+          Backend-focused software engineer specialized in building REST APIs,
+          JWT authentication, data modeling and cloud architecture using Python,
+          Flask and FastAPI.
+        </span>
+      </p>
+
+      <p>
+        <span data-lang="pt">
+          Experiência com Docker, CI/CD e plataformas cloud como GCP, AWS e
+          Azure. Atuação atual em liderança técnica e melhoria contínua de
+          processos.
+        </span>
+        <span data-lang="en" style="display: none">
+          Experience with Docker, CI/CD pipelines and cloud platforms such as
+          GCP, AWS and Azure. Currently acting in technical leadership roles.
+        </span>
+      </p>
+    </section>
+
+    <!-- STACK -->
+    <section class="stack">
+      <h3>Stack Técnica</h3>
+
+      <div class="stack-grid">
+        <span>Python</span>
+        <span>Flask</span>
+        <span>FastAPI</span>
+        <span>PostgreSQL</span>
+        <span>Docker</span>
+        <span>Google Cloud</span>
+        <span>AWS</span>
+        <span>CI/CD</span>
+        <span>Arquitetura de APIs</span>
+      </div>
+    </section>
+
+    <!-- EXPERTISE -->
+    <section class="expertise">
+      <h3>
+        <span data-lang="pt">Especialidades</span>
+        <span data-lang="en" style="display: none">Core Expertise</span>
+      </h3>
+
+      <div class="stack-grid">
+        <span>API Design</span>
+        <span>JWT & Authentication</span>
+        <span>Cloud-Native Systems</span>
+        <span>Docker & Containers</span>
+        <span>Data Modeling</span>
+        <span>Performance Optimization</span>
+        <span>Technical Leadership</span>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="projects">
+      <h3>
+        <span data-lang="pt">Projetos</span>
+        <span data-lang="en" style="display: none">Projects</span>
+      </h3>
+
+      <div class="projects-grid">
+        <!-- CallManager -->
+        <div class="project-card highlight">
+          <h4>
+            CallManager Backend
+            <div class="badges">
+              <span class="badge">Python</span>
+              <span class="badge">Flask</span>
+              <span class="badge">Docker</span>
+              <span class="badge">PostgreSQL</span>
+            </div>
+          </h4>
+
+          <p>
+            <span data-lang="pt">
+              Sistema de gerenciamento de ordens de serviço com arquitetura
+              modular, autenticação e pronto para deploy em nuvem.
+            </span>
+            <span data-lang="en" style="display: none">
+              Modular service order management system with authentication and
+              cloud-ready deployment.
+            </span>
+          </p>
+
+          <a
+            href="https://github.com/thinkbruno/callmanager-backend"
+            target="_blank"
+          >
+            Ver Projeto →
+          </a>
+        </div>
+
+        <!-- SWAPI Proxy -->
+        <div class="project-card highlight">
+          <h4>
+            SWAPI Proxy – GCP
+            <div class="badges">
+              <span class="badge">Python</span>
+              <span class="badge">GCP</span>
+              <span class="badge">API Gateway</span>
+              <span class="badge">REST</span>
+            </div>
+          </h4>
+
+          <p>
+            <span data-lang="pt">
+              API REST integrada ao Google Cloud com arquitetura escalável.
+            </span>
+            <span data-lang="en" style="display: none">
+              REST API integrated with Google Cloud using scalable architecture.
+            </span>
+          </p>
+
+          <a
+            href="https://github.com/thinkbruno/api-powerofdata"
+            target="_blank"
+          >
+            Ver Projeto →
+          </a>
+        </div>
+
+        <!-- Python Toolbox -->
+        <div class="project-card">
+          <h4>
+            python-toolbox
+            <div class="badges">
+              <span class="badge">Python</span>
+              <span class="badge">Utilities</span>
+              <span class="badge">Reusable Code</span>
+            </div>
+          </h4>
+
+          <p>
+            <span data-lang="pt">
+              Coleção de utilitários reutilizáveis para acelerar projetos
+              backend.
+            </span>
+            <span data-lang="en" style="display: none">
+              Collection of reusable utilities to accelerate backend projects.
+            </span>
+          </p>
+
+          <a
+            href="https://github.com/thinkbruno/python-toolbox"
+            target="_blank"
+          >
+            Ver no GitHub →
+          </a>
+        </div>
+
+        <!-- BW Normalize -->
+        <div class="project-card">
+          <h4>
+            bw-normalize
+            <div class="badges">
+              <span class="badge">Python</span>
+              <span class="badge">Data Processing</span>
+              <span class="badge">Library</span>
+            </div>
+          </h4>
+
+          <p>
+            <span data-lang="pt">
+              Biblioteca Python para normalização e padronização de dados.
+            </span>
+            <span data-lang="en" style="display: none">
+              Python library for data normalization and standardization.
+            </span>
+          </p>
+
+          <a href="https://github.com/thinkbruno/bw-normalize" target="_blank">
+            Ver no GitHub →
+          </a>
+        </div>
+
+        <!-- Mexico Cities -->
+        <div class="project-card">
+          <h4>
+            mexico_cities
+            <div class="badges">
+              <span class="badge">Dataset</span>
+              <span class="badge">Data Modeling</span>
+              <span class="badge">Backend Support</span>
+            </div>
+          </h4>
+
+          <p>
+            <span data-lang="pt">
+              Base estruturada de cidades do México para uso em aplicações e
+              APIs.
+            </span>
+            <span data-lang="en" style="display: none">
+              Structured dataset of Mexican cities for applications and APIs.
+            </span>
+          </p>
+
+          <a href="https://github.com/thinkbruno/mexico_cities" target="_blank">
+            Ver no GitHub →
+          </a>
+        </div>
+
+        <!-- Docker Testes -->
+        <div class="project-card">
+          <h4>
+            docker-testes
+            <div class="badges">
+              <span class="badge">Docker</span>
+              <span class="badge">Containers</span>
+              <span class="badge">Dev Environment</span>
+            </div>
+          </h4>
+
+          <p>
+            <span data-lang="pt">
+              Ambiente de experimentação e testes utilizando containers Docker.
+            </span>
+            <span data-lang="en" style="display: none">
+              Experimentation and testing environment using Docker containers.
+            </span>
+          </p>
+
+          <a href="https://github.com/thinkbruno/docker-testes" target="_blank">
+            Ver no GitHub →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Bruno Ramos</p>
+    </footer>
+
+    <!-- SCRIPT DE IDIOMA -->
+    <script>
+      function setLanguage(lang) {
+        const elements = document.querySelectorAll("[data-lang]");
+        elements.forEach((el) => {
+          el.style.display =
+            el.getAttribute("data-lang") === lang ? "inline" : "none";
+        });
+
+        document.documentElement.lang = lang === "pt" ? "pt-BR" : "en";
+        localStorage.setItem("preferredLanguage", lang);
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const savedLang = localStorage.getItem("preferredLanguage") || "pt";
+        setLanguage(savedLang);
+      });
+    </script>
+  </body>
+</html>
