@@ -1,0 +1,17 @@
+{
+    "page_title": "Bruno Ramos | Backend Engineer",
+    "hero_title": "Backend Engineer | Cloud & API Architecture",
+    "hero_subtitle": "Designing scalable backend systems and cloud-native applications with Python.",
+    "about_title": "Professional Profile",
+    "about_text_1": "Backend-focused developer specialized in building REST APIs, JWT authentication and cloud architecture.",
+    "about_text_2": "Experience with Docker, CI/CD pipelines and cloud platforms such as GCP, AWS and Azure.",
+    "stack_title": "Tech Stack",
+    "projects_title": "Projects",
+    "project_swapi": "REST API integrated with Google Cloud using scalable architecture.",
+    "project_toolbox": "Collection of reusable utilities to accelerate backend projects.",
+    "project_normalize": "Python library for data normalization and standardization.",
+    "project_mexico": "Structured dataset of Mexican cities for applications and APIs.",
+    "cv_pt": "Portuguese Resume",
+    "cv_en": "English Resume",
+    "cv_es": "Spanish Resume"
+}
