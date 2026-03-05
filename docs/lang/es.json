@@ -1,10 +1,12 @@
 {
-    "page_title": "Bruno Ramos | Ingeniero Backend",
-    "hero_title": "Ingeniero Backend | Arquitectura de APIs y Cloud",
-    "hero_subtitle": "Diseñando sistemas backend escalables y aplicaciones cloud-native con Python.",
+    "page_title": "Bruno Ramos | Ingeniero de Software",
+    "hero_title": "Ingeniero de Software | Backend, APIs y Cloud",
+    "hero_subtitle": "Diseñando sistemas escalables, APIs robustas y aplicaciones cloud-native.",
     "about_title": "Perfil Profesional",
-    "about_text_1": "Desarrollador enfocado en backend especializado en APIs REST, autenticación JWT y arquitectura cloud.",
-    "about_text_2": "Experiencia con Docker, CI/CD y plataformas cloud como GCP, AWS y Azure.",
+    "about_intro": "Ingeniero de Software Full Stack con más de 15 años de experiencia en desarrollo de software, arquitectura de sistemas y liderazgo técnico.",
+    "about_experience": "Desde 2008 desarrollo soluciones escalables, APIs REST, microservicios y aplicaciones web de alto rendimiento. Amplia experiencia en backend con Python y Node.js, además de cloud computing, Docker y bases de datos relacionales y no relacionales.",
+    "about_focus": "Enfoque en arquitectura de software, buenas prácticas (Clean Code, SOLID, Design Patterns), pruebas automatizadas, CI/CD, APIs RESTful, microservicios, cloud (GCP) y containers Docker.",
+    "about_opportunities": "Abierto a oportunidades como: Software Engineer | Backend Engineer | Tech Lead | Full Stack Developer",
     "stack_title": "Stack Técnica",
     "projects_title": "Proyectos",
     "project_swapi": "API REST integrada con Google Cloud usando arquitectura escalable.",
@@ -13,5 +15,6 @@
     "project_mexico": "Base estructurada de ciudades de México para aplicaciones y APIs.",
     "cv_pt": "Currículum en Portugués",
     "cv_en": "Currículum en Inglés",
-    "cv_es": "Currículum en Español"
+    "cv_es": "Currículum en Español",
+    "project_docker": "Entorno de experimentación y pruebas utilizando contenedores Docker."
 }

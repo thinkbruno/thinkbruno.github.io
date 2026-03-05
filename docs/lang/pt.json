@@ -1,17 +1,20 @@
 {
-    "page_title": "Bruno Ramos | Engenheiro Backend",
-    "hero_title": "Engenheiro Backend | Arquitetura de APIs e Cloud",
-    "hero_subtitle": "Projetando sistemas backend escaláveis e aplicações cloud-native com Python.",
+    "page_title": "Bruno Ramos | Engenheiro de Software",
+    "hero_title": "Engenheiro de Software | Backend, APIs e Cloud",
+    "hero_subtitle": "Projetando sistemas escaláveis, APIs robustas e aplicações cloud-native.",
     "about_title": "Perfil Profissional",
-    "about_text_1": "Desenvolvedor focado em backend, especializado na construção de APIs REST, autenticação JWT e arquitetura em nuvem.",
-    "about_text_2": "Experiência com Docker, CI/CD e plataformas cloud como GCP, AWS e Azure.",
+    "about_intro": "Engenheiro de Software Full Stack com mais de 15 anos de experiência em desenvolvimento de software, arquitetura de sistemas e liderança técnica.",
+    "about_experience": "Atuo desde 2008 no desenvolvimento de soluções escaláveis, APIs REST, microsserviços e aplicações web de alta performance. Possuo forte experiência em backend com Python e Node.js, além de atuação em cloud computing, Docker, bancos de dados relacionais e não relacionais.",
+    "about_focus": "Foco em arquitetura de software, boas práticas (Clean Code, SOLID, Design Patterns), testes automatizados, CI/CD, APIs RESTful, microsserviços, Cloud (GCP) e containers Docker.",
+    "about_opportunities": "Aberto a oportunidades como: Software Engineer | Backend Engineer | Tech Lead | Full Stack Developer",
     "stack_title": "Stack Técnica",
     "projects_title": "Projetos",
     "project_swapi": "API REST integrada ao Google Cloud com arquitetura escalável.",
     "project_toolbox": "Coleção de utilitários reutilizáveis para acelerar projetos backend.",
     "project_normalize": "Biblioteca Python para normalização e padronização de dados.",
-    "project_mexico": "Base estruturada de cidades do México para uso em aplicações e APIs.",
+    "project_mexico": "Base estruturada de cidades do México para aplicações e APIs.",
     "cv_pt": "Currículo",
     "cv_en": "Currículo em Inglês",
-    "cv_es": "Currículo em Espanhol"
+    "cv_es": "Currículo em Espanhol",
+    "project_docker": "Ambiente de experimentação e testes utilizando containers Docker."
 }

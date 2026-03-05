@@ -1,10 +1,12 @@
 {
-    "page_title": "Bruno Ramos | Backend Engineer",
-    "hero_title": "Backend Engineer | Cloud & API Architecture",
-    "hero_subtitle": "Designing scalable backend systems and cloud-native applications with Python.",
+    "page_title": "Bruno Ramos | Software Engineer",
+    "hero_title": "Software Engineer | Backend, APIs and Cloud",
+    "hero_subtitle": "Designing scalable systems, robust APIs and cloud-native applications.",
     "about_title": "Professional Profile",
-    "about_text_1": "Backend-focused developer specialized in building REST APIs, JWT authentication and cloud architecture.",
-    "about_text_2": "Experience with Docker, CI/CD pipelines and cloud platforms such as GCP, AWS and Azure.",
+    "about_intro": "Full Stack Software Engineer with over 15 years of experience in software development, systems architecture and technical leadership.",
+    "about_experience": "Since 2008 I have been building scalable solutions, REST APIs, microservices and high-performance web applications. Strong backend experience with Python and Node.js, along with cloud computing, Docker and relational and non-relational databases.",
+    "about_focus": "Focus on software architecture, best practices (Clean Code, SOLID, Design Patterns), automated testing, CI/CD pipelines, RESTful APIs, microservices, cloud (GCP) and Docker containers.",
+    "about_opportunities": "Open to opportunities as: Software Engineer | Backend Engineer | Tech Lead | Full Stack Developer",
     "stack_title": "Tech Stack",
     "projects_title": "Projects",
     "project_swapi": "REST API integrated with Google Cloud using scalable architecture.",
@@ -13,5 +15,6 @@
     "project_mexico": "Structured dataset of Mexican cities for applications and APIs.",
     "cv_pt": "Portuguese Resume",
     "cv_en": "English Resume",
-    "cv_es": "Spanish Resume"
+    "cv_es": "Spanish Resume",
+    "project_docker": "Experimentation and testing environment using Docker containers."
 }

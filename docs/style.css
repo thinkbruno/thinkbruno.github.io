@@ -324,3 +324,7 @@ footer {
 .top-right button:hover {
   background: rgba(56, 189, 248, 0.2);
 }
+
+[data-i18n]{
+  transition: opacity .2s ease;
+  }
