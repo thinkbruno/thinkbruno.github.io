@@ -19,6 +19,8 @@
 
 }
 
+/* ===== BODY ===== */
+
 body {
 
     margin: 0;
@@ -27,20 +29,40 @@ body {
     background: var(--bg);
     color: var(--text);
 
-    transition:
+    /* transição moderna */
 
-        background 0.35s ease,
-        color 0.35s ease;
+    transition:
+        background-color 0.45s cubic-bezier(.4, 0, .2, 1),
+        color 0.35s ease,
+        opacity 0.25s ease;
+
 }
+
+/* ===== CARDS ===== */
 
 .card,
 .project-card,
-.about-card {
+.about-card,
+.contact-card {
+
+    background: var(--card);
 
     transition:
-        background 0.35s ease,
+        background-color 0.45s cubic-bezier(.4, 0, .2, 1),
         color 0.35s ease,
+        border-color 0.35s ease,
         transform 0.25s ease;
+
+}
+
+/* ===== BORDERS ===== */
+
+.card,
+.project-card,
+.about-card,
+.contact-card {
+
+    border: 1px solid var(--border);
 
 }
 
@@ -92,19 +114,28 @@ p {
 
     text-decoration: none;
 
-    transition: 0.2s;
+    transition:
+        background 0.25s ease,
+        transform 0.2s ease;
 
 }
 
 .btn:hover {
+
     background: var(--primary-hover);
+    transform: translateY(-1px);
+
 }
 
 /* ===== LINKS ===== */
 
 a {
+
     color: var(--primary);
     text-decoration: none;
+
+    transition: color 0.2s ease;
+
 }
 
 /* ===== UTILITIES ===== */
@@ -139,15 +170,12 @@ a {
 @media (max-width:768px) {
 
     .container {
-
         text-align: center;
-
     }
 
     .hero {
 
         grid-template-columns: 1fr !important;
-
         justify-items: center;
 
     }
@@ -160,25 +188,19 @@ a {
     }
 
     .services {
-
         grid-template-columns: 1fr;
-
     }
 
 }
 
 section {
-
     margin-top: 70px;
-
 }
 
-/* ===== Language transition ===== */
-
-body {
-    transition: opacity 0.35s ease;
-}
+/* ===== LANGUAGE FADE ===== */
 
 body.lang-changing {
+
     opacity: 0;
+
 }
