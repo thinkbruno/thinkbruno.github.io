@@ -1,19 +1,37 @@
 <header class="header">
   <div class="container header-inner">
-    <h1 class="logo">Bruno Ramos</h1>
+    <div class="logo">Bruno Ramos</div>
 
-    <nav class="nav">
+    <nav class="nav" id="nav">
       <a href="index.html" data-i18n="nav_home">Início</a>
       <a href="projects.html" data-i18n="nav_projects">Projetos</a>
       <a href="contact.html" data-i18n="nav_contact">Contato</a>
     </nav>
 
-    <div class="lang-switch">
-      <button onclick="setLanguage('pt')">🇧🇷 PT</button>
+    <div class="header-actions">
+      <!-- LANGUAGES -->
 
-      <button onclick="setLanguage('en')">🇺🇸 EN</button>
+      <div class="lang-switch">
+        <button onclick="setLanguage('pt')">🇧🇷</button>
+        <button onclick="setLanguage('en')">🇺🇸</button>
+        <button onclick="setLanguage('es')">🇪🇸</button>
+      </div>
 
-      <button onclick="setLanguage('es')">🇪🇸 ES</button>
+      <!-- THEME -->
+
+      <button class="theme-toggle" id="theme-toggle">🌙</button>
+
+      <!-- MOBILE -->
+
+      <button class="menu-toggle" id="menu-toggle">☰</button>
     </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" data-i18n="nav_home">Início</a>
+    <a href="projects.html" data-i18n="nav_projects">Projetos</a>
+    <a href="contact.html" data-i18n="nav_contact">Contato</a>
   </div>
 </header>

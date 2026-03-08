@@ -1,25 +1,94 @@
+/* =========================
+LOAD COMPONENTS
+========================= */
+
 async function loadComponent(id, file) {
 
-    const el = document.getElementById(id)
+    const response = await fetch(file)
+    const html = await response.text()
 
-    if (!el) return
+    document.getElementById(id).innerHTML = html
 
-    const res = await fetch(file)
-
-    const html = await res.text()
-
-    el.innerHTML = html
-
-    if (typeof applyTranslations === "function") {
-        applyTranslations()
+    if (id === "header") {
+        updateThemeIcon()
     }
 
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+loadComponent("header", "components/header.html")
+loadComponent("footer", "components/footer.html")
 
-    loadComponent("header", "components/header.html")
+/* =========================
+THEME
+========================= */
 
-    loadComponent("footer", "components/footer.html")
+document.addEventListener("click", (e) => {
+
+    if (e.target.id === "theme-toggle") {
+
+        const current =
+            document.documentElement.getAttribute("data-theme")
+
+        const newTheme =
+            current === "dark" ? "light" : "dark"
+
+        document.documentElement.setAttribute(
+            "data-theme",
+            newTheme
+        )
+
+        localStorage.setItem("theme", newTheme)
+
+        updateThemeIcon()
+
+    }
+
+})
+
+/* LOAD SAVED THEME */
+
+const savedTheme = localStorage.getItem("theme")
+
+if (savedTheme) {
+
+    document.documentElement.setAttribute(
+        "data-theme",
+        savedTheme
+    )
+
+}
+
+updateThemeIcon()
+
+function updateThemeIcon() {
+
+    const toggle = document.getElementById("theme-toggle")
+
+    if (!toggle) return
+
+    const theme =
+        document.documentElement.getAttribute("data-theme")
+
+    if (theme === "dark") {
+        toggle.textContent = "☀️"
+    } else {
+        toggle.textContent = "🌙"
+    }
+
+}
+
+/* =========================
+MOBILE MENU
+========================= */
+
+document.addEventListener("click", (e) => {
+
+    if (e.target.id === "menu-toggle") {
+
+        const menu = document.getElementById("mobile-menu")
+
+        menu.classList.toggle("active")
+
+    }
 
 })

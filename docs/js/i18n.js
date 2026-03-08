@@ -41,7 +41,19 @@ async function loadLanguage(lang) {
 }
 
 function setLanguage(lang) {
-    loadLanguage(lang);
+
+    if (lang === currentLanguage) return;
+
+    document.body.classList.add("lang-changing");
+
+    setTimeout(async () => {
+
+        await loadLanguage(lang);
+
+        document.body.classList.remove("lang-changing");
+
+    }, 250);
+
 }
 
 document.addEventListener("DOMContentLoaded", () => {

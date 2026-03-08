@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt">
+<html lang="pt-BR" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,7 +23,6 @@
     <script defer src="./js/components.js"></script>
     <script defer src="./js/i18n.js"></script>
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    <script src="js/github-activity.js"></script>
   </head>
 
   <body>
@@ -32,7 +31,7 @@
     <main class="container">
       <section class="tech-stack">
         <h2>Tech Stack</h2>
-
+      </br>
         <div class="stack-grid">
           <div class="stack-item">
             <i class="fa-brands fa-node-js"></i>
@@ -80,9 +79,10 @@
           </div>
         </div>
       </section>
+    </br>
       <h2 data-i18n="projects_title">Projetos</h2>
 
-      <div class="projects-grid">
+      <div class="projects">
         <div class="project-card">
           <h4>
             SWAPI Proxy – GCP
@@ -169,21 +169,6 @@
           </a>
         </div>
       </div>
-
-      <section class="github-section">
-        <h2 class="section-title">GitHub Activity</h2>
-
-        <div class="calendar-card">
-          <div class="github-header">
-            <span>Contribution Activity</span>
-            <a href="https://github.com/thinkbruno" target="_blank"
-              >View GitHub</a
-            >
-          </div>
-
-          <div class="calendar"></div>
-        </div>
-      </section>
     </main>
 
     <div id="footer"></div>

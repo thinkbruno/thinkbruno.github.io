@@ -1,7 +1,15 @@
-.footer{
-    margin-top:60px;
-    border-top:1px solid #1e293b;
-    text-align:center;
-    padding:30px;
-    color:#64748b;
-  }
+footer {
+
+  margin-top: 80px;
+
+  border-top: 1px solid var(--border);
+
+  padding: 30px;
+
+  text-align: center;
+
+  font-size: 0.9rem;
+
+  color: var(--muted);
+
+}
