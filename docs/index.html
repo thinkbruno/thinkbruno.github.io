@@ -1,212 +1,122 @@
 <!doctype html>
-<html lang="pt-BR">
+
+<html lang="pt-BR" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-i18n="page_title">Bruno Ramos | Backend Engineer</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <title>Bruno Ramos</title>
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/home.css" />
+
+    <link rel="stylesheet" href="css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <script defer src="./js/components.js"></script>
+    <script defer src="./js/i18n.js"></script>
   </head>
 
   <body>
-    <!-- TOP BAR -->
-    <div class="top-bar">
-      <div class="top-right">
-        <!-- GITHUB -->
-        <a
-          href="https://github.com/thinkbruno"
-          target="_blank"
-          class="icon-link"
-          title="GitHub"
-        >
-          <svg viewBox="0 0 24 24" class="icon">
-            <path
-              fill="currentColor"
-              d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 008 10.95c.6.1.82-.26.82-.58v-2.17c-3.25.7-3.94-1.4-3.94-1.4-.55-1.4-1.34-1.77-1.34-1.77-1.1-.76.08-.75.08-.75 1.22.09 1.87 1.26 1.87 1.26 1.08 1.85 2.83 1.32 3.52 1 .1-.79.42-1.32.76-1.62-2.6-.3-5.34-1.3-5.34-5.78 0-1.27.45-2.3 1.2-3.1-.12-.3-.52-1.52.12-3.16 0 0 .97-.31 3.2 1.18a11 11 0 015.82 0c2.23-1.5 3.2-1.18 3.2-1.18.64 1.64.24 2.86.12 3.16.75.8 1.2 1.83 1.2 3.1 0 4.5-2.74 5.48-5.35 5.78.43.37.82 1.1.82 2.22v3.3c0 .32.22.69.83.58A11.5 11.5 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"
-            />
-          </svg>
-        </a>
+    <div id="header"></div>
 
-        <!-- LINKEDIN -->
-        <a
-          href="https://www.linkedin.com/in/ramosbruno90/"
-          target="_blank"
-          class="icon-link"
-          title="LinkedIn"
-        >
-          <svg viewBox="0 0 24 24" class="icon">
-            <path
-              fill="currentColor"
-              d="M4.98 3.5C4.98 5 3.86 6 2.5 6S0 5 0 3.5 1.12 1 2.5 1s2.48 1 2.48 2.5zM.5 8h4V24h-4V8zm7 0h3.6v2.2h.05c.5-.95 1.75-2.2 3.6-2.2C19.5 8 21 10.3 21 14v10h-4v-8.9c0-2.1-.75-3.6-2.6-3.6-1.4 0-2.2.95-2.55 1.85-.13.3-.15.7-.15 1.1V24h-4V8z"
-            />
-          </svg>
-        </a>
-
-        <!-- EMAIL -->
-        <a href="mailto:brunoramos90@gmail.com" class="icon-link" title="Email">
-          <svg viewBox="0 0 24 24" class="icon">
-            <path
-              fill="currentColor"
-              d="M2 4h20a2 2 0 012 2v12a2 2 0 01-2 2H2a2 2 0 01-2-2V6a2 2 0 012-2zm0 2v.01L12 13 22 6.01V6H2zm0 2.2V18h20V8.2l-10 6.8-10-6.8z"
-            />
-          </svg>
-        </a>
-
-        <!-- LANGUAGES -->
-        <button onclick="setLanguage('pt')">🇧🇷</button>
-        <button onclick="setLanguage('en')">🇺🇸</button>
-        <button onclick="setLanguage('es')">🇪🇸</button>
-      </div>
-    </div>
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-container">
+    <main class="container">
+      <section class="hero">
         <div class="hero-photo">
-          <img src="assets/img/profile.png" alt="Bruno Ramos" />
+          <img src="img/profile.jpg" alt="Bruno Ramos" />
         </div>
 
-        <div class="hero-content">
-          <h1>Bruno Ramos</h1>
-
-          <h2 data-i18n="hero_title"></h2>
-
-          <p class="hero-highlight" data-i18n="hero_subtitle"></p>
-
-          <div class="cv-buttons">
-            <a
-              href="assets/cv/brunoramoscv_ptbr.pdf"
-              target="_blank"
-              class="cv-btn"
-            >
-              🇧🇷 <span data-i18n="cv_pt"></span>
-            </a>
-
-            <a
-              href="assets/cv/brunoramoscv_en.pdf"
-              target="_blank"
-              class="cv-btn"
-            >
-              🇺🇸 <span data-i18n="cv_en"></span>
-            </a>
-
-            <a
-              href="assets/cv/brunoramoscv_es.pdf"
-              target="_blank"
-              class="cv-btn"
-            >
-              🇪🇸 <span data-i18n="cv_es"></span>
-            </a>
-          </div>
+        <div class="hero-text">
+          <h1 data-i18n="hero_title"></h1>
+          <p data-i18n="hero_highlight"></p>
         </div>
-      </div>
-    </section>
 
-    <!-- ABOUT -->
-    <section class="about">
-      <h3 data-i18n="about_title"></h3>
-
-      <p data-i18n="about_intro"></p>
-
-      <p data-i18n="about_experience"></p>
-
-      <p data-i18n="about_focus"></p>
-
-      <p class="opportunities" data-i18n="about_opportunities"></p>
-    </section>
-
-    <!-- STACK -->
-
-    <section class="stack">
-      <h3 data-i18n="stack_title"></h3>
-
-      <div class="stack-grid">
-        <span>Python</span>
-        <span>Flask</span>
-        <span>FastAPI</span>
-        <span>PostgreSQL</span>
-        <span>Docker</span>
-        <span>Google Cloud</span>
-        <span>AWS</span>
-        <span>CI/CD</span>
-        <span>API Architecture</span>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-
-    <section class="projects">
-      <h3 data-i18n="projects_title"></h3>
-
-      <div class="projects-grid">
-        <div class="project-card">
-          <h4>SWAPI Proxy – GCP</h4>
-
-          <p data-i18n="project_swapi"></p>
+        <div class="hero-links">
+          <a
+            href="/docs/cv/brunoramoscv_ptbr.pdf"
+            target="_blank"
+            class="cv-button"
+          >
+            🇧🇷 Currículo
+          </a>
 
           <a
-            href="https://github.com/thinkbruno/powerofdata-test"
+            href="/docs/cv/brunoramoscv_en.pdf"
             target="_blank"
+            class="cv-button"
           >
-            GitHub →
+            🇺🇸 Resume
           </a>
-        </div>
-
-        <div class="project-card">
-          <h4>python-toolbox</h4>
-
-          <p data-i18n="project_toolbox"></p>
 
           <a
-            href="https://github.com/thinkbruno/python-toolbox"
+            href="/docs/cv/brunoramoscv_es.pdf"
             target="_blank"
+            class="cv-button"
           >
-            GitHub →
+            🇪🇸 Currículo
+          </a>
+
+          <a
+            href="https://github.com/thinkbruno"
+            target="_blank"
+            class="social-button"
+          >
+            <i class="fa-brands fa-github"></i>GitHub
+          </a>
+
+          <a
+            href="https://linkedin.com/in/ramosbruno90"
+            target="_blank"
+            class="social-button"
+          >
+            <i class="fa-brands fa-linkedin"></i>LinkedIn
           </a>
         </div>
+      </section>
 
-        <div class="project-card">
-          <h4>bw-normalize</h4>
+      <section class="about-section">
+        <div class="about-card">
+          <h2 data-i18n="about_title"></h2>
 
-          <p data-i18n="project_normalize"></p>
-
-          <a href="https://github.com/thinkbruno/bw-normalize" target="_blank">
-            GitHub →
-          </a>
+          <p data-i18n="about"></p>
+        </div>
+      </section>
+      <section class="services">
+        <div class="service-card">
+          <div class="service-icon">💻</div>
+          <h3 data-i18n="service_dev_title"></h3>
+          <p data-i18n="service_dev_desc"></p>
         </div>
 
-        <div class="project-card">
-          <h4>mexico_cities</h4>
-
-          <p data-i18n="project_mexico"></p>
-
-          <a href="https://github.com/thinkbruno/mexico_cities" target="_blank">
-            GitHub →
-          </a>
+        <div class="service-card">
+          <div class="service-icon">🐧</div>
+          <h3 data-i18n="service_linux_title"></h3>
+          <p data-i18n="service_linux_desc"></p>
         </div>
 
-        <div class="project-card">
-          <h4>
-            docker-testes
-            <div class="badges">
-              <span class="badge">Docker</span>
-              <span class="badge">Containers</span>
-              <span class="badge">Dev Environment</span>
-            </div>
-          </h4>
-
-          <p data-i18n="project_docker"></p>
-
-          <a href="https://github.com/thinkbruno/docker-testes" target="_blank">
-            GitHub →
-          </a>
+        <div class="service-card">
+          <div class="service-icon">🖥</div>
+          <h3 data-i18n="service_pc_title"></h3>
+          <p data-i18n="service_pc_desc"></p>
         </div>
-      </div>
-    </section>
 
-    <footer>
-      <p>© 2026 Bruno Ramos</p>
-    </footer>
+        <div class="service-card">
+          <div class="service-icon">🌐</div>
+          <h3 data-i18n="service_network_title"></h3>
+          <p data-i18n="service_network_desc"></p>
+        </div>
+      </section>
+    </main>
 
-    <script src="js/i18n.js"></script>
+    <div id="footer"></div>
   </body>
 </html>

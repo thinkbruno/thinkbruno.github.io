@@ -1,0 +1,184 @@
+/* ===== THEME VARIABLES ===== */
+
+:root {
+
+    --bg: #ffffff;
+    --text: #0f172a;
+    --card: #f1f5f9;
+    --border: #e2e8f0;
+    --primary: #2563eb;
+
+}
+
+[data-theme="dark"] {
+
+    --bg: #0b0f1a;
+    --text: #e2e8f0;
+    --card: #1e293b;
+    --border: #334155;
+
+}
+
+body {
+
+    margin: 0;
+    font-family: system-ui;
+
+    background: var(--bg);
+    color: var(--text);
+
+    transition:
+
+        background 0.35s ease,
+        color 0.35s ease;
+}
+
+.card,
+.project-card,
+.about-card {
+
+    transition:
+        background 0.35s ease,
+        color 0.35s ease,
+        transform 0.25s ease;
+
+}
+
+/* ===== TYPOGRAPHY ===== */
+
+h1,
+h2,
+h3,
+h4 {
+
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    color: var(--muted);
+}
+
+/* ===== CONTAINER ===== */
+
+.container {
+
+    max-width: var(--container);
+    margin: auto;
+    padding: 2rem;
+
+}
+
+/* ===== BUTTON ===== */
+
+.btn {
+
+    display: inline-block;
+    padding: 10px 18px;
+
+    background: var(--primary);
+    color: white;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+
+}
+
+.btn:hover {
+    background: var(--primary-hover);
+}
+
+/* ===== LINKS ===== */
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+/* ===== UTILITIES ===== */
+
+.grid {
+
+    display: grid;
+    gap: 24px;
+
+}
+
+.section {
+    margin-top: 60px;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width:768px) {
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+}
+
+/* MOBILE IMPROVEMENTS */
+
+@media (max-width:768px) {
+
+    .container {
+
+        text-align: center;
+
+    }
+
+    .hero {
+
+        grid-template-columns: 1fr !important;
+
+        justify-items: center;
+
+    }
+
+    .hero-text {
+
+        max-width: 500px;
+        margin: auto;
+
+    }
+
+    .services {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+section {
+
+    margin-top: 70px;
+
+}
+
+/* ===== Language transition ===== */
+
+body {
+    transition: opacity 0.35s ease;
+}
+
+body.lang-changing {
+    opacity: 0;
+}
