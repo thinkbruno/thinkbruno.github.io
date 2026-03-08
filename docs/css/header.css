@@ -1,0 +1,63 @@
+/* HEADER */
+
+.header {
+  border-bottom: 1px solid #1e293b;
+  background: rgba(11,15,26,0.8);
+  backdrop-filter: blur(6px);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #38bdf8;
+}
+
+/* SOCIAL */
+
+.social-icons{
+  display:flex;
+  gap:15px;
+}
+
+/* LANG */
+
+.lang-switch{
+  display:flex;
+  gap:8px;
+}
+
+.lang-switch button{
+  background:transparent;
+  border:1px solid rgba(56,189,248,.4);
+  color:#38bdf8;
+  padding:4px 10px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.lang-switch button:hover{
+  background:rgba(56,189,248,.2);
+}
