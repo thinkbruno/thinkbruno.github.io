@@ -31,5 +31,6 @@
     "project_normalize": "Python library for data normalization and standardization.",
     "project_mexico": "Structured dataset of Mexican cities for applications and APIs.",
     "project_docker": "Experimentation and testing environment using Docker containers.",
-    "quick_contact_title": "Quick Contact"
+    "quick_contact_title": "Quick Contact",
+    "project_validator": "A lightweight Python library for validating Brazilian document identifiers."
 }
