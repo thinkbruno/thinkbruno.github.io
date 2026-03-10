@@ -27,5 +27,6 @@
     "project_mexico": "Base estruturada de cidades do México para aplicações e APIs.",
     "project_docker": "Ambiente de experimentação e testes utilizando containers Docker.",
     "quick_contact_title": "Contato Rápido",
-    "project_validator": "Uma biblioteca Python leve para validação de identificadores de documentos brasileiros."
+    "project_validator": "Uma biblioteca Python leve para validação de identificadores de documentos brasileiros.",
+    "projects_search": "Buscar projeto ou tecnologia..."
 }

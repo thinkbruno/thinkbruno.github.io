@@ -32,5 +32,6 @@
     "project_mexico": "Structured dataset of Mexican cities for applications and APIs.",
     "project_docker": "Experimentation and testing environment using Docker containers.",
     "quick_contact_title": "Quick Contact",
-    "project_validator": "A lightweight Python library for validating Brazilian document identifiers."
+    "project_validator": "A lightweight Python library for validating Brazilian document identifiers.",
+    "projects_search": "Search project or technology..."
 }

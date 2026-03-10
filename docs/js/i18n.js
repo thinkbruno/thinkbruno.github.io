@@ -12,12 +12,9 @@ let currentLanguage = null
 
 async function loadLanguage(lang) {
 
-    // evita recarregar idioma atual
     if (lang === currentLanguage) return
 
     try {
-
-        /* carregar idioma (cache) */
 
         if (!translationsCache[lang]) {
 
@@ -28,15 +25,14 @@ async function loadLanguage(lang) {
                 return
             }
 
-            const translations = await response.json()
+            const data = await response.json()
 
-            translationsCache[lang] = translations
+            translationsCache[lang] = data
 
         }
 
         const translations = translationsCache[lang]
 
-        /* aplicar traduções */
 
         document.querySelectorAll("[data-i18n]").forEach(element => {
 
@@ -58,7 +54,19 @@ async function loadLanguage(lang) {
 
         })
 
-        /* atualizar idioma atual */
+
+        document.querySelectorAll("[data-i18n-placeholder]").forEach(element => {
+
+            const key = element.getAttribute("data-i18n-placeholder")
+
+            if (translations[key]) {
+
+                element.placeholder = translations[key]
+
+            }
+
+        })
+
 
         currentLanguage = lang
 
@@ -66,7 +74,6 @@ async function loadLanguage(lang) {
 
         localStorage.setItem("preferredLanguage", lang)
 
-        /* destacar idioma ativo */
 
         document.querySelectorAll(".lang-btn").forEach(btn => {
 
@@ -90,7 +97,7 @@ async function loadLanguage(lang) {
 
 
 /* =========================
-   SET LANGUAGE (WITH FADE)
+   SET LANGUAGE
 ========================= */
 
 function setLanguage(lang) {

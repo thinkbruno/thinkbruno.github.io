@@ -92,3 +92,45 @@ document.addEventListener("click", (e) => {
     }
 
 })
+
+const searchInput = document.getElementById("project-search");
+
+if (searchInput) {
+
+    searchInput.addEventListener("input", function () {
+
+        const query = this.value.toLowerCase();
+
+        const projects = document.querySelectorAll(".project-card");
+
+        projects.forEach(card => {
+
+            const text = card.innerText.toLowerCase();
+
+            if (text.includes(query)) {
+
+                card.style.display = "";
+
+            } else {
+
+                card.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+}
+
+document.querySelectorAll("[data-i18n-placeholder]").forEach(element => {
+
+    const key = element.getAttribute("data-i18n-placeholder");
+
+    if (translations[key]) {
+
+        element.placeholder = translations[key];
+
+    }
+
+});

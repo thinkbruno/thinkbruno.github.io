@@ -29,9 +29,11 @@
     <div id="header"></div>
 
     <main class="container">
+      <!-- TECH STACK -->
+
       <section class="tech-stack">
         <h2>Tech Stack</h2>
-      </br>
+
         <div class="stack-grid">
           <div class="stack-item">
             <i class="fa-brands fa-node-js"></i>
@@ -79,115 +81,144 @@
           </div>
         </div>
       </section>
-    </br>
-      <h2 data-i18n="projects_title">Projetos</h2>
 
-      <div class="projects">
+      <!-- PROJECTS -->
 
-        <div class="project-card">
-          <h4>
-            docs-validator
-            <div class="badges">
-              <span class="badge">Python</span>
-            </div>
-          </h4>
+      <section class="projects-section">
+        <div class="projects-header">
+          <h2 data-i18n="projects_title">Projetos</h2>
 
-          <p data-i18n="project_validator"></p>
-
-          <a
-            href="https://github.com/thinkbruno/docs-validator"
-            target="_blank"
-          >
-            GitHub →
-          </a>
+          <div class="search-wrapper">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              id="project-search"
+              data-i18n-placeholder="projects_search"
+            />
+          </div>
         </div>
 
-        <div class="project-card">
-          <h4>
-            SWAPI Proxy – GCP
-            <div class="badges">
-              <span class="badge">Python</span>
-              <span class="badge">GCP</span>
-              <span class="badge">Cloud</span>
+        <div class="projects">
+          <!-- docs-validator -->
+
+          <div class="project-card">
+            <h4 class="project-title">docs-validator</h4>
+
+            <div class="tags">
+              <span class="tag">Python</span>
             </div>
-          </h4>
 
-          <p data-i18n="project_swapi"></p>
+            <p data-i18n="project_validator"></p>
 
-          <a
-            href="https://github.com/thinkbruno/powerofdata-test"
-            target="_blank"
-          >
-            GitHub →
-          </a>
-        </div>
+            <a
+              href="https://github.com/thinkbruno/docs-validator"
+              target="_blank"
+            >
+              GitHub →
+            </a>
+          </div>
 
-        <div class="project-card">
-          <h4>
-            python-toolbox
-            <div class="badges">
-              <span class="badge">Python</span>
+          <!-- swapi -->
+
+          <div class="project-card">
+            <h4 class="project-title">SWAPI Proxy – GCP</h4>
+
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">GCP</span>
+              <span class="tag">Cloud</span>
             </div>
-          </h4>
 
-          <p data-i18n="project_toolbox"></p>
+            <p data-i18n="project_swapi"></p>
 
-          <a
-            href="https://github.com/thinkbruno/python-toolbox"
-            target="_blank"
-          >
-            GitHub →
-          </a>
-        </div>
+            <a
+              href="https://github.com/thinkbruno/powerofdata-test"
+              target="_blank"
+            >
+              GitHub →
+            </a>
+          </div>
 
-        <div class="project-card">
-          <h4>
-            bw-normalize
-            <div class="badges">
-              <span class="badge">Python</span>
+          <!-- toolbox -->
+
+          <div class="project-card">
+            <h4 class="project-title">python-toolbox</h4>
+
+            <div class="tags">
+              <span class="tag">Python</span>
             </div>
-          </h4>
 
-          <p data-i18n="project_normalize"></p>
+            <p data-i18n="project_toolbox"></p>
 
-          <a href="https://github.com/thinkbruno/bw-normalize" target="_blank">
-            GitHub →
-          </a>
-        </div>
+            <a
+              href="https://github.com/thinkbruno/python-toolbox"
+              target="_blank"
+            >
+              GitHub →
+            </a>
+          </div>
 
-        <div class="project-card">
-          <h4>
-            mexico_cities
-            <div class="badges">
-              <span class="badge">MySql</span>
-              <span class="badge">Databases</span>
+          <!-- normalize -->
+
+          <div class="project-card">
+            <h4 class="project-title">bw-normalize</h4>
+
+            <div class="tags">
+              <span class="tag">Python</span>
             </div>
-          </h4>
 
-          <p data-i18n="project_mexico"></p>
+            <p data-i18n="project_normalize"></p>
 
-          <a href="https://github.com/thinkbruno/mexico_cities" target="_blank">
-            GitHub →
-          </a>
-        </div>
+            <a
+              href="https://github.com/thinkbruno/bw-normalize"
+              target="_blank"
+            >
+              GitHub →
+            </a>
+          </div>
 
-        <div class="project-card">
-          <h4>
-            docker-testes
-            <div class="badges">
-              <span class="badge">Docker</span>
-              <span class="badge">Containers</span>
-              <span class="badge">Dev Environment</span>
+          <!-- mexico -->
+
+          <div class="project-card">
+            <h4 class="project-title">mexico_cities</h4>
+
+            <div class="tags">
+              <span class="tag">MySql</span>
+              <span class="tag">Databases</span>
             </div>
-          </h4>
 
-          <p data-i18n="project_docker"></p>
+            <p data-i18n="project_mexico"></p>
 
-          <a href="https://github.com/thinkbruno/docker-testes" target="_blank">
-            GitHub →
-          </a>
+            <a
+              href="https://github.com/thinkbruno/mexico_cities"
+              target="_blank"
+            >
+              GitHub →
+            </a>
+          </div>
+
+          <!-- docker -->
+
+          <div class="project-card">
+            <h4 class="project-title">docker-testes</h4>
+
+            <div class="tags">
+              <span class="tag">Docker</span>
+              <span class="tag">Containers</span>
+              <span class="tag">Dev Environment</span>
+            </div>
+
+            <p data-i18n="project_docker"></p>
+
+            <a
+              href="https://github.com/thinkbruno/docker-testes"
+              target="_blank"
+            >
+              GitHub →
+            </a>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <div id="footer"></div>
