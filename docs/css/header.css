@@ -51,14 +51,7 @@
 
 }
 
-.lang-switch button {
 
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 14px;
-
-}
 
 /* theme */
 
@@ -198,5 +191,97 @@
     flex-wrap: wrap;
 
   }
+
+}
+
+.fi {
+
+  font-size: 20px;
+
+}
+
+/* ===== LANGUAGE SWITCHER ===== */
+
+.lang-switch {
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: var(--card);
+
+  padding: 4px;
+
+  border-radius: 10px;
+
+  border: 1px solid var(--border);
+
+}
+
+/* botão */
+
+.lang-btn {
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 6px 10px;
+
+  border: none;
+  background: none;
+
+  cursor: pointer;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  color: var(--text);
+
+  border-radius: 8px;
+
+  opacity: .75;
+
+  transition:
+
+    background .25s ease,
+    transform .15s ease,
+    opacity .2s ease;
+
+}
+
+/* bandeira */
+
+.lang-btn .fi {
+
+  font-size: 16px;
+
+}
+
+/* hover */
+
+.lang-btn:hover {
+
+  opacity: 1;
+  transform: translateY(-1px);
+
+}
+
+/* idioma ativo */
+
+.lang-btn.active {
+
+  background: var(--primary);
+  color: white;
+
+  opacity: 1;
+
+}
+
+/* ajustar cor da flag ativa */
+
+.lang-btn.active .fi {
+
+  filter: brightness(1.2);
 
 }

@@ -1,65 +1,124 @@
-const translationsCache = {};
-let currentLanguage = null;
+/* =========================
+   I18N SYSTEM
+========================= */
+
+const translationsCache = {}
+let currentLanguage = null
+
+
+/* =========================
+   LOAD LANGUAGE
+========================= */
 
 async function loadLanguage(lang) {
 
-    // evita recarregar idioma já ativo
-    if (lang === currentLanguage) return;
+    // evita recarregar idioma atual
+    if (lang === currentLanguage) return
 
-    // verifica se já foi carregado (cache)
-    if (!translationsCache[lang]) {
-        const response = await fetch(`lang/${lang}.json`);
-        const translations = await response.json();
+    try {
 
-        translationsCache[lang] = translations;
-    }
+        /* carregar idioma (cache) */
 
-    const translations = translationsCache[lang];
+        if (!translationsCache[lang]) {
 
-    // aplica traduções
-    document.querySelectorAll("[data-i18n]").forEach(element => {
+            const response = await fetch(`lang/${lang}.json`)
 
-        const key = element.getAttribute("data-i18n");
+            if (!response.ok) {
+                console.error("Language file not found:", lang)
+                return
+            }
 
-        if (translations[key]) {
-            element.style.opacity = 0;
+            const translations = await response.json()
 
-            setTimeout(() => {
-                element.innerText = translations[key];
-                element.style.opacity = 1;
-            }, 100);
+            translationsCache[lang] = translations
+
         }
 
-    });
+        const translations = translationsCache[lang]
 
-    currentLanguage = lang;
+        /* aplicar traduções */
 
-    document.documentElement.lang = lang;
+        document.querySelectorAll("[data-i18n]").forEach(element => {
 
-    localStorage.setItem("preferredLanguage", lang);
+            const key = element.getAttribute("data-i18n")
+
+            if (translations[key]) {
+
+                element.style.opacity = 0
+
+                setTimeout(() => {
+
+                    element.innerText = translations[key]
+
+                    element.style.opacity = 1
+
+                }, 100)
+
+            }
+
+        })
+
+        /* atualizar idioma atual */
+
+        currentLanguage = lang
+
+        document.documentElement.lang = lang
+
+        localStorage.setItem("preferredLanguage", lang)
+
+        /* destacar idioma ativo */
+
+        document.querySelectorAll(".lang-btn").forEach(btn => {
+
+            btn.classList.remove("active")
+
+            if (btn.dataset.lang === lang) {
+
+                btn.classList.add("active")
+
+            }
+
+        })
+
+    } catch (error) {
+
+        console.error("Error loading language:", error)
+
+    }
 
 }
+
+
+/* =========================
+   SET LANGUAGE (WITH FADE)
+========================= */
 
 function setLanguage(lang) {
 
-    if (lang === currentLanguage) return;
+    if (lang === currentLanguage) return
 
-    document.body.classList.add("lang-changing");
+    document.body.classList.add("lang-changing")
 
     setTimeout(async () => {
 
-        await loadLanguage(lang);
+        await loadLanguage(lang)
 
-        document.body.classList.remove("lang-changing");
+        document.body.classList.remove("lang-changing")
 
-    }, 250);
+    }, 250)
 
 }
 
+
+/* =========================
+   INIT
+========================= */
+
 document.addEventListener("DOMContentLoaded", () => {
 
-    const savedLang = localStorage.getItem("preferredLanguage") || "pt";
+    const savedLang =
+        localStorage.getItem("preferredLanguage") || "pt"
 
-    loadLanguage(savedLang);
+    loadLanguage(savedLang)
 
-});
+})
