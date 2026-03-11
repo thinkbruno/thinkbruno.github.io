@@ -1,14 +1,10 @@
-/* =========================
-   I18N SYSTEM
-========================= */
+
 
 const translationsCache = {}
 let currentLanguage = null
 
 
-/* =========================
-   LOAD LANGUAGE
-========================= */
+
 
 async function loadLanguage(lang) {
 
@@ -96,9 +92,7 @@ async function loadLanguage(lang) {
 }
 
 
-/* =========================
-   SET LANGUAGE
-========================= */
+
 
 function setLanguage(lang) {
 
@@ -117,9 +111,6 @@ function setLanguage(lang) {
 }
 
 
-/* =========================
-   INIT
-========================= */
 
 document.addEventListener("DOMContentLoaded", () => {
 
