@@ -9,11 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initMobileMenu()
     initProjectSearch()
     initPlaceholders()
-    initWhatsApp()
-    initWhatsAppPopup()
     initLazyProjects()
-    loadComponent("whatsapp-container", "components/whatsapp.html")
-    updateWhatsAppLinks()
 
 })
 
@@ -34,7 +30,13 @@ async function loadComponent(id, file) {
 
         element.innerHTML = html
 
-        if (id === "header") updateThemeIcon()
+        if (id === "header") {
+            updateThemeIcon()
+        }
+
+        if (id === "footer") {
+            updateYear()
+        }
 
         if (file.includes("whatsapp")) {
             updateWhatsAppLinks()
@@ -187,34 +189,6 @@ function initPlaceholders() {
 }
 
 /* =========================
-WHATSAPP BUTTON
-========================= */
-
-async function initWhatsApp() {
-
-    const container =
-        document.getElementById("whatsapp-button")
-
-    if (!container) return
-
-    try {
-
-        const response =
-            await fetch("components/whatsapp.html")
-
-        const html = await response.text()
-
-        container.innerHTML = html
-
-    } catch (err) {
-
-        console.warn("WhatsApp component failed")
-
-    }
-
-}
-
-/* =========================
 WHATSAPP POPUP
 ========================= */
 
@@ -238,6 +212,10 @@ function initWhatsAppPopup() {
     })
 
 }
+
+/* =========================
+LAZY PROJECTS
+========================= */
 
 function initLazyProjects() {
 
@@ -269,12 +247,14 @@ function initLazyProjects() {
 
 }
 
+/* =========================
+WHATSAPP MESSAGE
+========================= */
+
 const whatsappMessages = {
 
     pt: "Olá Bruno, vi seu portfólio e gostaria de solicitar um orçamento.",
-
     en: "Hello Bruno, I saw your portfolio and would like to request a quote.",
-
     es: "Hola Bruno, vi tu portafolio y me gustaría solicitar un presupuesto."
 
 }
@@ -299,5 +279,25 @@ function updateWhatsAppLinks() {
             link.setAttribute("rel", "noopener noreferrer")
 
         })
+
+}
+
+/* =========================
+FOOTER YEAR
+========================= */
+
+function updateYear() {
+
+    const year = document.getElementById("year")
+
+    if (!year) return
+
+    const startYear = 2008
+    const currentYear = new Date().getFullYear()
+
+    year.textContent =
+        currentYear > startYear
+            ? `${startYear}–${currentYear}`
+            : currentYear
 
 }
