@@ -5,6 +5,27 @@
     --card: #f1f5f9;
     --border: #e2e8f0;
     --primary: #2563eb;
+    --muted: #64748b;
+    --primary-hover: #1d4ed8;
+
+
+}
+
+.card,
+.project-card,
+.about-card,
+.contact-card {
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+}
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .about-card,
+[data-theme="dark"] .contact-card {
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 
 }
 
@@ -14,6 +35,16 @@
     --text: #e2e8f0;
     --card: #1e293b;
     --border: #334155;
+    --muted: #64748b;
+    --primary-hover: #3b82f6;
+
+}
+
+[data-theme="light"] body {
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
 
 }
 
@@ -23,20 +54,14 @@ body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
 
-
-
-    /* transição moderna */
-
     transition:
         background-color 0.45s cubic-bezier(.4, 0, .2, 1),
         color 0.35s ease,
         opacity 0.25s ease;
 
+    background-color: var(--bg);
 
-
-    background-color: #0b0f1a;
-
-    color: #e2e8f0;
+    color: var(--text);
 
     background-image:
         linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
