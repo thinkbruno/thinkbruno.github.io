@@ -70,6 +70,10 @@ async function loadLanguage(lang) {
 
         localStorage.setItem("preferredLanguage", lang)
 
+        if (typeof updateCVLink === "function") {
+            updateCVLink()
+        }
+
 
         document.querySelectorAll(".lang-btn").forEach(btn => {
 
@@ -119,4 +123,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     loadLanguage(savedLang)
 
+    setTimeout(() => {
+        if (typeof updateCVLink === "function") {
+            updateCVLink()
+        }
+
+    }, 100)
 })

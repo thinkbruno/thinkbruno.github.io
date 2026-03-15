@@ -264,6 +264,7 @@
 
   opacity: 1;
   transform: translateY(-1px);
+  background: var(--border);
 
 }
 
@@ -271,8 +272,8 @@
 
 .lang-btn.active {
 
-  background: var(--primary);
-  color: white;
+  background: var(--border);
+  color: var(--text);
 
   opacity: 1;
 

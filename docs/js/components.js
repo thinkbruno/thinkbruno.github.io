@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initProjectSearch()
     initPlaceholders()
     initLazyProjects()
+    updateCVLink()
 
 })
 
@@ -299,5 +300,25 @@ function updateYear() {
         currentYear > startYear
             ? `${startYear}–${currentYear}`
             : currentYear
+
+}
+
+function updateCVLink() {
+
+    const button = document.getElementById("cv-download")
+
+    if (!button) return
+
+    const lang = document.documentElement.lang || "pt"
+
+    const files = {
+
+        pt: "cv/bruno_ramos_pt.pdf",
+        en: "cv/bruno_ramos_en.pdf",
+        es: "cv/bruno_ramos_es.pdf"
+
+    }
+
+    button.href = files[lang] || files.pt
 
 }
