@@ -1,0 +1,26 @@
+:root {
+    --bg-primary: #0b0f19;
+    --bg-secondary: #111827;
+
+    --text-primary: #ffffff;
+    --text-secondary: #9ca3af;
+
+    --accent: #22c55e;
+    --accent-hover: #16a34a;
+
+    --border: rgba(255, 255, 255, 0.1);
+}
+
+/* LIGHT MODE */
+.light {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f3f4f6;
+
+    --text-primary: #111827;
+    --text-secondary: #6b7280;
+
+    --accent: #22c55e;
+    --accent-hover: #16a34a;
+
+    --border: rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,49 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.gap {
+    gap: 16px;
+}
+
+/* BUTTON */
+.btn {
+    background: var(--accent);
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: var(--accent-hover);
+}
+
+/* CARD (igual seus projetos) */
+.card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
