@@ -259,6 +259,13 @@ body.lang-changing {
 
 }
 
+.whatsapp-wrapper {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 999999;
+}
+
 .whatsapp-float {
 
     position: fixed;
@@ -283,7 +290,7 @@ body.lang-changing {
 
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     animation: whatsappPulse 2.5s infinite;
-    z-index: 999;
+    z-index: 999999;
 
     cursor: pointer;
 
@@ -396,6 +403,7 @@ body.lang-changing {
     pointer-events: none;
 
     transition: .35s;
+    z-index: 999999;
 
 }
 
