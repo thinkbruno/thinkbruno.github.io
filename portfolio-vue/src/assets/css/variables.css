@@ -24,3 +24,9 @@
 
     --border: rgba(0, 0, 0, 0.1);
 }
+
+body.light {
+    --bg: #ffffff;
+    --bg-secondary: #f5f5f5;
+    --text: #111;
+}
