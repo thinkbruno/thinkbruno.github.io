@@ -8,7 +8,7 @@ const langs = { pt, en, es };
 export const languageStore = reactive({
     current: "pt",
     t(key) {
-        return langs[this.current][key] || key;
+        return langs[this.current]?.[key] || key;
     },
     set(lang) {
         this.current = lang;

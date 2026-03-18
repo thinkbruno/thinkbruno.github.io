@@ -1,6 +1,8 @@
 .container {
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1100px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .flex {
@@ -20,22 +22,33 @@
     gap: 16px;
 }
 
-/* BUTTON */
-.btn {
-    background: var(--accent);
-    color: white;
-    padding: 12px 18px;
+/* BOTÕES PADRÃO */
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 16px;
+
+    border: 1px solid var(--border);
     border-radius: 8px;
-    cursor: pointer;
-    border: none;
+
+    color: var(--text);
+    background: transparent;
+
+    font-weight: 500;
+    text-decoration: none;
+
     transition: 0.2s;
 }
 
-.btn:hover {
-    background: var(--accent-hover);
+.btn-outline:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-1px);
 }
 
-/* CARD (igual seus projetos) */
+/* CARD PADRÃO */
 .card {
     background: var(--bg-secondary);
     border: 1px solid var(--border);
@@ -46,4 +59,25 @@
 
 .card:hover {
     transform: translateY(-5px);
+}
+
+/* SOCIAL ICONS (global) */
+.social-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.social-icons a {
+    color: var(--text);
+    transition: 0.2s;
+}
+
+.social-icons a:hover {
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }

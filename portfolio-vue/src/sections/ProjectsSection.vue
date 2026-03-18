@@ -1,23 +1,31 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import ProjectCard from '@/components/ProjectCard.vue'
+import { languageStore } from '@/store/language'
+import { Github } from 'lucide-vue-next'
+const repos = ref([])
+const loading = ref(true)
 
-const projects = ref([])
-
-const username = 'SEU_USERNAME_AQUI' // 🔥 troca isso
+const username = 'thinkbruno'
 
 onMounted(async () => {
     try {
-        const res = await fetch(`https://api.github.com/users/${username}/repos`)
-        const data = await res.json()
+        const response = await fetch(`https://api.github.com/users/${username}/repos`)
+        const data = await response.json()
 
-        // filtra e ordena
-        projects.value = data
+        repos.value = data
+            //  remove forks
             .filter(repo => !repo.fork)
-            .sort((a, b) => b.stargazers_count - a.stargazers_count)
 
-    } catch (err) {
-        console.error(err)
+            //  remove repos com #ignore
+            .filter(repo => !repo.description?.toLowerCase().includes('#ignore'))
+
+            //  ordena por mais recente
+            .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
+
+    } catch (error) {
+        console.error('Erro ao buscar repos:', error)
+    } finally {
+        loading.value = false
     }
 })
 </script>
@@ -26,14 +34,35 @@ onMounted(async () => {
     <section class="projects" id="projects">
         <div class="container">
 
-            <h2 class="section-title">Projetos</h2>
-
-            <p class="section-subtitle">
-                Alguns trabalhos e estudos desenvolvidos por mim
+            <h2>{{ languageStore.t('projects_title') }}</h2>
+            <br>
+            <p class="subtitle">
+                {{ languageStore.t('projects_subtitle') }}
             </p>
+            <br>
+            <!-- LOADING -->
+            <div v-if="loading">
+                <p>Carregando...</p>
+            </div>
 
-            <div class="projects-grid">
-                <ProjectCard v-for="project in projects" :key="project.id" :project="project" />
+            <!-- LISTA -->
+            <div v-else class="projects-grid">
+
+                <div v-for="repo in repos" :key="repo.id" class="project-card">
+                    <h3>{{ repo.name }}</h3>
+
+                    <p>
+                        {{ repo.description || 'Sem descrição' }}
+                    </p>
+                    <p><span>{{ repo.language || "MySQL" }}</span></p>
+                    <div class="project-actions">
+                        <a :href="repo.html_url" target="_blank" class="btn-outline">
+                            <Github size="18" />
+                            {{ languageStore.t('github') }}
+                        </a>
+                    </div>
+                </div>
+
             </div>
 
         </div>

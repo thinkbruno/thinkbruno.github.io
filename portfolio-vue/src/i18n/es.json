@@ -1,0 +1,22 @@
+{
+    "about": "Sobre",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "budget": "Presupuesto",
+    "role": "Desarrollador Full Stack",
+    "curriculum": "Currículum",
+    "about_title": "Sobre mí",
+    "about_text": "Desarrollador full stack enfocado en soluciones reales para negocios. Experiencia con sistemas web, automatización y soporte técnico.",
+    "services_title": "Cómo puedo ayudarte",
+    "services_subtitle": "Soluciones prácticas para problemas reales de tu negocio",
+    "service_web_title": "Desarrollo Web",
+    "service_web_desc": "Creación de sitios y sistemas modernos, rápidos y responsivos.",
+    "service_automation_title": "Automatización",
+    "service_automation_desc": "Automatización de procesos para ahorrar tiempo y aumentar la productividad.",
+    "service_support_title": "Soporte Técnico",
+    "service_support_desc": "Mantenimiento y soporte para computadoras, redes e impresoras.",
+    "projects_title": "Proyectos",
+    "projects_subtitle": "Algunos trabajos que he desarrollado",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+}

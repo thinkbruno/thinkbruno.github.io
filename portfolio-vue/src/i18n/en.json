@@ -1,0 +1,22 @@
+{
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "budget": "Get a Quote",
+    "role": "Full Stack Developer",
+    "curriculum": "Resume",
+    "about_title": "About me",
+    "about_text": "Full stack developer focused on real business solutions. Experience with web systems, automation, and technical support.",
+    "services_title": "How I can help you",
+    "services_subtitle": "Practical solutions for real business problems",
+    "service_web_title": "Web Development",
+    "service_web_desc": "Building modern, fast and responsive websites and systems.",
+    "service_automation_title": "Automation",
+    "service_automation_desc": "Automating processes to save time and increase productivity.",
+    "service_support_title": "Technical Support",
+    "service_support_desc": "Maintenance and support for computers, networks and printers.",
+    "projects_title": "Projects",
+    "projects_subtitle": "Some of the work I have developed",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+}

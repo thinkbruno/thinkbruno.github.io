@@ -1,31 +1,22 @@
 <script setup>
 import { ref, onMounted } from 'vue'
+import { toggleTheme } from '@/utils/theme'
 
 const isDark = ref(true)
 
 onMounted(() => {
-    const saved = localStorage.getItem('theme')
-
-    if (saved) {
-        isDark.value = saved === 'dark'
-    }
-
-    applyTheme()
+    const saved = localStorage.getItem('theme') || 'dark'
+    isDark.value = saved === 'dark'
 })
 
-const toggleTheme = () => {
+const handleToggle = () => {
+    toggleTheme()
     isDark.value = !isDark.value
-    localStorage.setItem('theme', isDark.value ? 'dark' : 'light')
-    applyTheme()
-}
-
-const applyTheme = () => {
-    document.body.classList.toggle('light', !isDark.value)
 }
 </script>
 
 <template>
-    <button class="theme-btn" @click="toggleTheme">
+    <button class="theme-btn" @click="handleToggle">
         {{ isDark ? '☀️' : '🌙' }}
     </button>
 </template>

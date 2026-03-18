@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { languageStore } from '@/store/language'
 import LanguageSwitcher from './LanguageSwitcher.vue'
 import ThemeToggle from './ThemeToggle.vue'
 
@@ -9,7 +10,6 @@ const toggleMenu = () => {
     isOpen.value = !isOpen.value
 }
 
-//  fecha menu ao trocar para desktop
 const handleResize = () => {
     if (window.innerWidth > 768) {
         isOpen.value = false
@@ -31,29 +31,29 @@ onBeforeUnmount(() => {
 
             <h1 class="logo">Bruno Ramos</h1>
 
-            <!-- DESKTOP -->
             <nav class="nav desktop-only">
-                <a href="#about">Sobre</a>
-                <a href="#services">Serviços</a>
-                <a href="#projects">Projetos</a>
-                <a href="/budget" class="btn small">Orçamento</a>
+                <a href="#about">{{ languageStore.t('about') }}</a>
+                <a href="#services">{{ languageStore.t('services') }}</a>
+                <a href="#projects">{{ languageStore.t('projects') }}</a>
+
+                <a href="/budget">
+                    {{ languageStore.t('budget') }}
+                </a>
 
                 <LanguageSwitcher />
                 <ThemeToggle />
             </nav>
 
-            <!-- BOTÃO MOBILE -->
             <button class="menu-btn mobile-only" @click="toggleMenu">
                 ☰
             </button>
         </div>
 
-        <!-- MENU MOBILE -->
         <div v-if="isOpen" class="mobile-menu">
-            <a href="#about" @click="toggleMenu">Sobre</a>
-            <a href="#services" @click="toggleMenu">Serviços</a>
-            <a href="#projects" @click="toggleMenu">Projetos</a>
-            <a href="/budget" @click="toggleMenu">Orçamento</a>
+            <a href="#about">{{ languageStore.t('about') }}</a>
+            <a href="#services">{{ languageStore.t('services') }}</a>
+            <a href="#projects">{{ languageStore.t('projects') }}</a>
+            <a href="/budget">{{ languageStore.t('budget') }}</a>
 
             <div class="mobile-actions">
                 <LanguageSwitcher mobile />

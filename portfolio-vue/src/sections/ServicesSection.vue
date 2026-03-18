@@ -1,6 +1,6 @@
 <script setup>
 import ServiceCard from '@/components/ServiceCard.vue'
-
+import { languageStore } from '@/store/language'
 const services = [
     {
         icon: '💻',
@@ -29,12 +29,12 @@ const services = [
     <section class="services" id="services">
         <div class="container">
 
-            <h2 class="section-title">Como posso te ajudar</h2>
-
-            <p class="section-subtitle">
-                Soluções práticas para problemas reais do seu negócio
+            <h2>{{ languageStore.t('services_title') }}</h2>
+            <br>
+            <p>
+                {{ languageStore.t('services_subtitle') }}
             </p>
-
+            <br>
             <div class="services-grid">
                 <ServiceCard v-for="(service, index) in services" :key="index" :icon="service.icon"
                     :title="service.title" :description="service.description" />

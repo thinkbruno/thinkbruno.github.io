@@ -1,5 +1,22 @@
 {
-    "cta": "Solicitar orçamento",
-    "title": "Desenvolvedor Full Stack",
-    "budget_title": "Solicite um orçamento"
+    "about": "Sobre",
+    "services": "Serviços",
+    "projects": "Projetos",
+    "budget": "Orçamento",
+    "role": "Desenvolvedor Full Stack",
+    "curriculum": "Currículo",
+    "about_title": "Sobre mim",
+    "about_text": "Desenvolvedor full stack focado em soluções reais para negócios. Experiência com sistemas web, automações e suporte técnico.",
+    "services_title": "Como posso te ajudar",
+    "services_subtitle": "Soluções práticas para problemas reais do seu negócio",
+    "service_web_title": "Desenvolvimento Web",
+    "service_web_desc": "Criação de sistemas e sites modernos, rápidos e responsivos.",
+    "service_automation_title": "Automações",
+    "service_automation_desc": "Automatização de processos para ganhar tempo e produtividade.",
+    "service_support_title": "Suporte Técnico",
+    "service_support_desc": "Manutenção e suporte para computadores, redes e impressoras.",
+    "projects_title": "Projetos",
+    "projects_subtitle": "Alguns dos trabalhos que desenvolvi",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
 }

@@ -1,17 +1,17 @@
+<script setup>
+import { languageStore } from '@/store/language'
+</script>
+
 <template>
     <section class="about" id="about">
         <div class="container">
-            <div class="about-card">
-                <h2>Sobre mim</h2>
 
-                <p>
-                    Desenvolvedor full stack focado em soluções reais para negócios.
-                </p>
-
-                <p>
-                    Experiência com sistemas web, automações e suporte técnico.
-                </p>
-            </div>
+            <h2>{{ languageStore.t('about_title') }}</h2>
+            <br>
+            <p>
+                {{ languageStore.t('about_text') }}
+            </p>
+            <br>
         </div>
     </section>
 </template>
