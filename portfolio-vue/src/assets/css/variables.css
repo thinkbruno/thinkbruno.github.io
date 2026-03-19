@@ -1,0 +1,28 @@
+:root {
+    --primary: #3b82f6;
+
+    /* DARK DEFAULT */
+    --bg-primary: #0b0f19;
+    --bg-secondary: #111827;
+
+    --text-primary: #ffffff;
+    --text-secondary: #9ca3af;
+
+    --border: rgba(255, 255, 255, 0.15);
+
+    --bg: #0b1220;
+    --text: #ffffff;
+}
+
+[data-theme="light"] {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f3f4f6;
+
+    --text-primary: #111827;
+    --text-secondary: #6b7280;
+
+    --border: rgba(0, 0, 0, 0.15);
+
+    --bg: #ffffff;
+    --text: #111111;
+}
