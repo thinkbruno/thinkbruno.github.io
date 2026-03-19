@@ -29,14 +29,14 @@ const cvLink = computed(() => getCvLink(languageStore.current))
 
                     <!-- LinkedIn -->
                     <a href="https://www.linkedin.com/in/ramosbruno90/" target="_blank" class="btn-outline">
-                        <Github size="18" />
-                        GitHub
+                        <Linkedin size="18" />
+                        Linkedin
                     </a>
 
                     <!-- Instagram -->
                     <a href="https://www.instagram.com/brunoramos.tech" target="_blank" class="btn-outline">
-                        <Linkedin size="18" />
-                        LinkedIn
+                        <Instagram size="18" />
+                        Instagram
                     </a>
                 </div>
             </div>
