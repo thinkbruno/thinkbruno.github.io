@@ -10,13 +10,12 @@ const project = ref("");
 const description = ref("");
 const deadline = ref("");
 
-//  mensagem dinâmica (preview + envio)
+// Mensagem dinâmica (preview + envio)
 const message = computed(() => {
     return `${languageStore.t("budget_msg_intro")}
 
 ${languageStore.t("budget_name")}: ${name.value || "-"}
-${languageStore.t("budget_project")}: ${project.value ? languageStore.t(`budget_project_${project.value}`) : "-"
-        }
+${languageStore.t("budget_project")}: ${project.value ? languageStore.t(`budget_project_${project.value}`) : "-"}
 ${languageStore.t("budget_deadline")}: ${deadline.value || "-"}
 
 ${languageStore.t("budget_description")}:
@@ -63,24 +62,21 @@ function submit() {
                         <input v-model="name" :placeholder="languageStore.t('budget_name')" />
 
                         <select v-model="project" class="budget-select">
-                            <option disabled value="">
+                            <option value="" disabled selected hidden>
                                 {{ languageStore.t("budget_project") }}
                             </option>
-
                             <option value="landing">
                                 {{ languageStore.t("budget_project_landing") }}
                             </option>
-
                             <option value="institutional">
                                 {{ languageStore.t("budget_project_institutional") }}
                             </option>
-
                             <option value="system">
                                 {{ languageStore.t("budget_project_system") }}
                             </option>
                         </select>
 
-                        <textarea v-model="description" :placeholder="languageStore.t('budget_description')" />
+                        <textarea v-model="description" :placeholder="languageStore.t('budget_description')"></textarea>
 
                         <input v-model="deadline" :placeholder="languageStore.t('budget_deadline')" />
 
@@ -96,10 +92,10 @@ function submit() {
                             {{ languageStore.t("budget_email") }}
                         </a>
 
-                        <!--  PREVIEW DINÂMICO -->
+                        <!-- PREVIEW DINÂMICO -->
                         <pre class="budget-preview">
 {{ message }}
-                        </pre>
+                    </pre>
 
                     </div>
 
