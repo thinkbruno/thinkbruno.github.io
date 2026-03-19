@@ -15,7 +15,7 @@ const cvLink = computed(() => getCvLink(languageStore.current))
 
             <div class="hero-info">
                 <h1>Bruno Ramos</h1>
-                <p>Desenvolvedor Full Stack</p>
+                <p>{{ languageStore.t('hero_subtitle') }}</p>
                 <br>
                 <div class="hero-buttons">
                     <a :href="cvLink" target="_blank" class="btn-outline">

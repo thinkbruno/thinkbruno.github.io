@@ -6,7 +6,7 @@ import { languageStore } from '@/store/language'
     <section class="about" id="about">
         <div class="container">
 
-            <h2>{{ languageStore.t('about_title') }}</h2>
+            <h1>{{ languageStore.t('about_title') }}</h1>
             <br>
             <p>
                 {{ languageStore.t('about_text') }}

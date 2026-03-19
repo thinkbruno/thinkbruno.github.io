@@ -1,4 +1,5 @@
 {
+    "hero_subtitle": "Full Stack Developer | Hardware | Infrastructure | IT consultancy",
     "about": "About",
     "services": "Services",
     "projects": "Projects",
@@ -6,9 +7,7 @@
     "role": "Full Stack Developer",
     "curriculum": "Resume",
     "about_title": "About me",
-    "about_text": "Full stack developer focused on real business solutions. Experience with web systems, automation, and technical support.",
-    "services_title": "How I can help you",
-    "services_subtitle": "Practical solutions for real business problems",
+    "about_text": "Professional with more than 15 years of experience in software development, systems architecture and technical leadership.",
     "service_web_title": "Web Development",
     "service_web_desc": "Building modern, fast and responsive websites and systems.",
     "service_automation_title": "Automation",
@@ -36,5 +35,15 @@
     "budget_project_institutional": "Corporate website",
     "budget_project_system": "Web system",
     "budget_project_maintenance": "Maintenance",
-    "budget_msg_intro": "Hello! I would like to request a quote."
+    "budget_msg_intro": "Hello! I would like to request a quote.",
+    "services_title": "Services",
+    "services_subtitle": "Complete solutions for your business",
+    "service_dev_title": "Web Development",
+    "service_dev_desc": "Modern, fast and responsive website development",
+    "service_linux_title": "Linux Servers",
+    "service_linux_desc": "Secure configuration and maintenance of Linux servers",
+    "service_pc_title": "Computer Maintenance",
+    "service_pc_desc": "Formatting, upgrades and specialized technical support",
+    "service_network_title": "Networking",
+    "service_network_desc": "Configuration and support for home and business networks"
 }

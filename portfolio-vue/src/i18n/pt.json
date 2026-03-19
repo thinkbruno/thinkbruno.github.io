@@ -1,4 +1,5 @@
 {
+    "hero_subtitle": "Desenvolvedor Full Stack | Hardware | Infraestrutura | Consultoria em TI",
     "about": "Sobre",
     "services": "Serviços",
     "projects": "Projetos",
@@ -6,9 +7,7 @@
     "role": "Desenvolvedor Full Stack",
     "curriculum": "Currículo",
     "about_title": "Sobre mim",
-    "about_text": "Desenvolvedor full stack focado em soluções reais para negócios. Experiência com sistemas web, automações e suporte técnico.",
-    "services_title": "Como posso te ajudar",
-    "services_subtitle": "Soluções práticas para problemas reais do seu negócio",
+    "about_text": "Profissional com mais de 15 anos de experiência em desenvolvimento de software, arquitetura de sistemas e liderança técnica.",
     "service_web_title": "Desenvolvimento Web",
     "service_web_desc": "Criação de sistemas e sites modernos, rápidos e responsivos.",
     "service_automation_title": "Automações",
@@ -36,5 +35,15 @@
     "budget_project_institutional": "Site institucional",
     "budget_project_system": "Sistema web",
     "budget_project_maintenance": "Manutenção",
-    "budget_msg_intro": "Olá! Gostaria de solicitar um orçamento."
+    "budget_msg_intro": "Olá! Gostaria de solicitar um orçamento.",
+    "services_title": "Serviços",
+    "services_subtitle": "Soluções completas para seu negócio",
+    "service_dev_title": "Desenvolvimento Web",
+    "service_dev_desc": "Criação de sites modernos, rápidos e responsivos",
+    "service_linux_title": "Servidores Linux",
+    "service_linux_desc": "Configuração e manutenção de servidores Linux com segurança",
+    "service_pc_title": "Manutenção de Computadores",
+    "service_pc_desc": "Formatação, upgrades e suporte técnico especializado",
+    "service_network_title": "Redes",
+    "service_network_desc": "Configuração e suporte em redes domésticas e empresariais"
 }

@@ -1,6 +1,8 @@
 <script setup>
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
+import WhatsAppButton from '@/components/WhatsAppButton.vue'
+
 </script>
 
 <template>
@@ -20,5 +22,6 @@ import Footer from '@/components/Footer.vue'
         </main>
 
         <Footer />
+        <WhatsAppButton />
     </div>
 </template>

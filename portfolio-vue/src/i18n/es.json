@@ -1,4 +1,5 @@
 {
+    "hero_subtitle": "Desarrollador Full Stack | Ferretería | Infraestructura | consultoría informática",
     "about": "Sobre",
     "services": "Servicios",
     "projects": "Proyectos",
@@ -6,9 +7,7 @@
     "role": "Desarrollador Full Stack",
     "curriculum": "Currículum",
     "about_title": "Sobre mí",
-    "about_text": "Desarrollador full stack enfocado en soluciones reales para negocios. Experiencia con sistemas web, automatización y soporte técnico.",
-    "services_title": "Cómo puedo ayudarte",
-    "services_subtitle": "Soluciones prácticas para problemas reales de tu negocio",
+    "about_text": "Profesional con más de 15 años de experiencia en desarrollo de software, arquitectura de sistemas y liderazgo técnico.",
     "service_web_title": "Desarrollo Web",
     "service_web_desc": "Creación de sitios y sistemas modernos, rápidos y responsivos.",
     "service_automation_title": "Automatización",
@@ -36,5 +35,15 @@
     "budget_project_institutional": "Sitio institucional",
     "budget_project_system": "Sistema web",
     "budget_project_maintenance": "Mantenimiento",
-    "budget_msg_intro": "¡Hola! Me gustaría solicitar un presupuesto."
+    "budget_msg_intro": "¡Hola! Me gustaría solicitar un presupuesto.",
+    "services_title": "Servicios",
+    "services_subtitle": "Soluciones completas para tu negocio",
+    "service_dev_title": "Desarrollo Web",
+    "service_dev_desc": "Creación de sitios modernos, rápidos y responsivos",
+    "service_linux_title": "Servidores Linux",
+    "service_linux_desc": "Configuración y mantenimiento seguro de servidores Linux",
+    "service_pc_title": "Mantenimiento de Computadoras",
+    "service_pc_desc": "Formateo, mejoras y soporte técnico especializado",
+    "service_network_title": "Redes",
+    "service_network_desc": "Configuración y soporte de redes domésticas y empresariales"
 }

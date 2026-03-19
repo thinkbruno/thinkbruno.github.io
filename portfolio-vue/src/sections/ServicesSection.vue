@@ -1,26 +1,31 @@
 <script setup>
 import ServiceCard from '@/components/ServiceCard.vue'
 import { languageStore } from '@/store/language'
+
 const services = [
     {
+        id: 'dev',
         icon: '💻',
-        title: 'Desenvolvimento de sistemas',
-        description: 'Criação de sistemas web personalizados para atender necessidades específicas.'
+        title: 'service_dev_title',
+        description: 'service_dev_desc'
     },
     {
+        id: 'linux',
+        icon: '🐧',
+        title: 'service_linux_title',
+        description: 'service_linux_desc'
+    },
+    {
+        id: 'pc',
+        icon: '🖥️',
+        title: 'service_pc_title',
+        description: 'service_pc_desc'
+    },
+    {
+        id: 'network',
         icon: '🌐',
-        title: 'Sites institucionais',
-        description: 'Sites modernos, rápidos e responsivos.'
-    },
-    {
-        icon: '⚙️',
-        title: 'Automação',
-        description: 'Automatização de processos e tarefas.'
-    },
-    {
-        icon: '🛠️',
-        title: 'Suporte técnico',
-        description: 'Manutenção e suporte em TI.'
+        title: 'service_network_title',
+        description: 'service_network_desc'
     }
 ]
 </script>
@@ -31,13 +36,16 @@ const services = [
 
             <h2>{{ languageStore.t('services_title') }}</h2>
             <br>
+
             <p>
                 {{ languageStore.t('services_subtitle') }}
             </p>
+
             <br>
+
             <div class="services-grid">
-                <ServiceCard v-for="(service, index) in services" :key="index" :icon="service.icon"
-                    :title="service.title" :description="service.description" />
+                <ServiceCard v-for="service in services" :key="service.id" :icon="service.icon"
+                    :title="languageStore.t(service.title)" :description="languageStore.t(service.description)" />
             </div>
 
         </div>
