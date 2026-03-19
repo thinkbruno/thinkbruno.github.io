@@ -1,13 +1,14 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import path from 'path'
+import { resolve } from 'path'
 
 export default defineConfig({
-  base: '/',
   plugins: [vue()],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src')
-    }
-  }
+  root: resolve(__dirname), // raiz do projeto
+  build: {
+    outDir: 'dist',         // pasta de saída
+    rollupOptions: {
+      input: resolve(__dirname, 'index.html'), // ponto de entrada
+    },
+  },
 })
