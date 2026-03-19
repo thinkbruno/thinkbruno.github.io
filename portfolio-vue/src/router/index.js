@@ -1,15 +1,26 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../pages/Home.vue'
-import Budget from '../pages/Budget.vue'
+
+// Lazy loading
+const Home = () => import('../pages/Home.vue')
+const Budget = () => import('../pages/Budget.vue')
 
 const routes = [
-    { path: '/', component: Home },
-    { path: '/orcamento', component: Budget }
+    { path: '/', name: 'Home', component: Home },
+    { path: '/budget', name: 'Budget', component: Budget }
 ]
 
 const router = createRouter({
     history: createWebHistory(),
-    routes
+    routes,
+    scrollBehavior(to) {
+        if (to.hash) {
+            return {
+                el: to.hash,
+                behavior: 'smooth'
+            }
+        }
+        return { top: 0 }
+    }
 })
 
 export default router

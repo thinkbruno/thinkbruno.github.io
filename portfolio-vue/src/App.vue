@@ -8,7 +8,15 @@ import Footer from '@/components/Footer.vue'
         <Header />
 
         <main>
-            <router-view />
+            <Suspense>
+                <template #default>
+                    <router-view />
+                </template>
+
+                <template #fallback>
+                    <div class="loading">Carregando...</div>
+                </template>
+            </Suspense>
         </main>
 
         <Footer />
