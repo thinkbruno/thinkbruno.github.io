@@ -191,37 +191,7 @@
 
 }
 
-/* container da busca */
 
-.search-wrapper {
-
-  position: relative;
-
-  width: 100%;
-  max-width: 420px;
-
-}
-
-/* input */
-
-#project-search {
-
-  width: 100%;
-
-  padding: 10px 14px 10px 38px;
-
-  border-radius: 10px;
-
-  border: 1px solid var(--border);
-
-  background: var(--card);
-  color: var(--text);
-
-  font-size: 14px;
-
-}
-
-/* icone */
 
 .search-wrapper i {
 

@@ -72,7 +72,7 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/home.css" />
-
+    <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link
       rel="stylesheet"
@@ -143,7 +143,7 @@
         </div>
 
         <div class="hero-text">
-          <h1 data-i18n="hero_title"></h1>
+          <h2 data-i18n="hero_title"></h2>
           <p data-i18n="hero_highlight"></p>
         </div>
 
@@ -181,25 +181,50 @@
           <p data-i18n="about"></p>
         </div>
       </section>
-      <section class="services">
-        <div class="service-card">
-          <h3 data-i18n="service_dev_title"></h3>
-          <p data-i18n="service_dev_desc"></p>
+      <section class="services-highlight home-services">
+        <h2 data-i18n="services_title"></h2>
+
+        <p class="services-intro" data-i18n="services_intro"></p>
+
+        <p class="services-location" data-i18n="services_location"></p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fas fa-network-wired"></i>
+            <h4 data-i18n="service_infra_title"></h4>
+            <p data-i18n="service_infra_desc"></p>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-desktop"></i>
+            <h4 data-i18n="service_support_title"></h4>
+            <p data-i18n="service_support_desc"></p>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-code"></i>
+            <h4 data-i18n="service_dev_title"></h4>
+            <p data-i18n="service_dev_desc"></p>
+          </div>
+
+          <div class="service-card">
+            <i class="fas fa-lightbulb"></i>
+            <h4 data-i18n="service_consult_title"></h4>
+            <p data-i18n="service_consult_desc"></p>
+          </div>
         </div>
 
-        <div class="service-card">
-          <h3 data-i18n="service_linux_title"></h3>
-          <p data-i18n="service_linux_desc"></p>
-        </div>
+        <div class="services-cta">
+          <p class="cta-text" data-i18n="services_cta_text"></p>
 
-        <div class="service-card">
-          <h3 data-i18n="service_pc_title"></h3>
-          <p data-i18n="service_pc_desc"></p>
-        </div>
-
-        <div class="service-card">
-          <h3 data-i18n="service_network_title"></h3>
-          <p data-i18n="service_network_desc"></p>
+          <a
+            class="btn service-cta"
+            href="https://wa.me/5513988542002?text=Olá%20Bruno,%20vi%20seu%20site%20e%20gostaria%20de%20um%20orçamento."
+            target="_blank"
+          >
+            <i class="fab fa-whatsapp"></i>
+            <span data-i18n="services_cta"></span>
+          </a>
         </div>
       </section>
     </main>

@@ -8,8 +8,18 @@
     --muted: #64748b;
     --primary-hover: #1d4ed8;
 
+    --text-color: #1f2937;
+    --muted-text: #5f6b7a;
+    --card-bg: #ffffff;
+    --card-border: #d9e1ea;
+    --input-bg: #ffffff;
+    --input-border: #c9d3df;
+    --accent-color: #2563eb;
+
 
 }
+
+
 
 .card,
 .project-card,
@@ -531,4 +541,10 @@ section {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.home-services {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    padding-bottom: 0;
 }

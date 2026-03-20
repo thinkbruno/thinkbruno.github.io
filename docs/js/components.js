@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initComponents()
     initTheme()
     initMobileMenu()
-    initProjectSearch()
+
     initPlaceholders()
     initLazyProjects()
     updateCVLink()
@@ -133,36 +133,7 @@ function initMobileMenu() {
 
 }
 
-/* =========================
-PROJECT SEARCH
-========================= */
 
-function initProjectSearch() {
-
-    const searchInput =
-        document.getElementById("project-search")
-
-    if (!searchInput) return
-
-    searchInput.addEventListener("input", function () {
-
-        const query = this.value.toLowerCase()
-
-        const projects =
-            document.querySelectorAll(".project-card")
-
-        projects.forEach(card => {
-
-            const text = card.innerText.toLowerCase()
-
-            card.style.display =
-                text.includes(query) ? "" : "none"
-
-        })
-
-    })
-
-}
 
 /* =========================
 I18N PLACEHOLDERS
