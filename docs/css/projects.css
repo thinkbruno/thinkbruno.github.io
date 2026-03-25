@@ -172,7 +172,7 @@
 
 }
 
-/* header projetos */
+
 
 .projects-header {
 
@@ -208,7 +208,7 @@
 
 }
 
-/* foco */
+
 
 #project-search:focus {
 
@@ -221,7 +221,7 @@
   opacity: 0.6;
 }
 
-/* mobile */
+
 
 @media (max-width:768px) {
 

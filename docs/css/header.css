@@ -41,7 +41,7 @@
 
 }
 
-/* actions */
+
 
 .header-actions {
 
@@ -53,7 +53,7 @@
 
 
 
-/* theme */
+
 
 .theme-toggle {
 
@@ -74,7 +74,7 @@
   transform: rotate(20deg) scale(1.1);
 }
 
-/* mobile */
+
 
 :root {
   --text: #222;
@@ -134,7 +134,7 @@
 
 }
 
-/* menu aberto */
+
 
 #mobile-menu.active {
 
@@ -164,7 +164,7 @@
 }
 
 
-/* responsive */
+
 
 @media (max-width:768px) {
 
@@ -200,7 +200,7 @@
 
 }
 
-/* ===== LANGUAGE SWITCHER ===== */
+
 
 .lang-switch {
 
@@ -218,7 +218,7 @@
 
 }
 
-/* botão */
+
 
 .lang-btn {
 
@@ -250,7 +250,7 @@
 
 }
 
-/* bandeira */
+
 
 .lang-btn .fi {
 
@@ -258,7 +258,7 @@
 
 }
 
-/* hover */
+
 
 .lang-btn:hover {
 
@@ -268,7 +268,7 @@
 
 }
 
-/* idioma ativo */
+
 
 .lang-btn.active {
 
@@ -279,7 +279,7 @@
 
 }
 
-/* ajustar cor da flag ativa */
+
 
 .lang-btn.active .fi {
 

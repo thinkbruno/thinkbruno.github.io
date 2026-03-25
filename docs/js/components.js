@@ -1,6 +1,4 @@
-/* =========================
-INIT
-========================= */
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -14,9 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 })
 
-/* =========================
-LOAD COMPONENTS
-========================= */
+
 
 async function loadComponent(id, file) {
 
@@ -60,9 +56,7 @@ function initComponents() {
 
 }
 
-/* =========================
-THEME
-========================= */
+
 
 function initTheme() {
 
@@ -115,9 +109,7 @@ function updateThemeIcon() {
 
 }
 
-/* =========================
-MOBILE MENU
-========================= */
+
 
 function initMobileMenu() {
 
@@ -135,9 +127,7 @@ function initMobileMenu() {
 
 
 
-/* =========================
-I18N PLACEHOLDERS
-========================= */
+
 
 function initPlaceholders() {
 
@@ -160,9 +150,7 @@ function initPlaceholders() {
 
 }
 
-/* =========================
-WHATSAPP POPUP
-========================= */
+
 
 function initWhatsAppPopup() {
 
@@ -185,9 +173,7 @@ function initWhatsAppPopup() {
 
 }
 
-/* =========================
-LAZY PROJECTS
-========================= */
+
 
 function initLazyProjects() {
 
@@ -219,9 +205,7 @@ function initLazyProjects() {
 
 }
 
-/* =========================
-WHATSAPP MESSAGE
-========================= */
+
 
 const whatsappMessages = {
 
@@ -254,9 +238,7 @@ function updateWhatsAppLinks() {
 
 }
 
-/* =========================
-FOOTER YEAR
-========================= */
+
 
 function updateYear() {
 

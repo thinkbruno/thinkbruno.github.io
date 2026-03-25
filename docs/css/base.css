@@ -211,7 +211,7 @@ a {
     margin-top: 60px;
 }
 
-/* ===== MOBILE ===== */
+
 
 @media (max-width:768px) {
 
@@ -336,7 +336,7 @@ body.lang-changing {
 
 }
 
-/* tooltip */
+
 
 .whatsapp-tooltip {
 
@@ -370,7 +370,7 @@ body.lang-changing {
 
 
 
-/* mostrar tooltip */
+
 
 .whatsapp-float:hover .whatsapp-tooltip {
 
@@ -380,7 +380,7 @@ body.lang-changing {
 
 }
 
-/* mobile: esconder tooltip */
+
 
 @media (max-width:768px) {
 
@@ -496,7 +496,7 @@ body.lang-changing {
 
 }
 
-/* mobile */
+
 
 @media (max-width:768px) {
 
